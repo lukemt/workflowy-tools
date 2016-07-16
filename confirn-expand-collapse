@@ -1,0 +1,17 @@
+// ==UserScript==
+// @name           WorkflowyStylableTags
+// @description    Gives each tag it's own css style, so you can style them with Stylish.
+// @author         Nigel Thorne and LukeMT
+// @include        http*://*workflowy.com/*
+// @version        1.1
+// ==/UserScript==
+(function (String, $){
+    
+    var originalFn = $.fn.expandOrCollapseAllDescendantsOfProjectToggle;
+    $.fn.expandOrCollapseAllDescendantsOfProjectToggle = function() {
+        if(confirm("Do you really want to expand or collapse ALL items?")){
+            originalFn.apply(this, arguments);
+        }
+    };
+    
+})(String, $);
