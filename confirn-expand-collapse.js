@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name           WorkflowyStylableTags
-// @description    Gives each tag it's own css style, so you can style them with Stylish.
-// @author         Nigel Thorne and LukeMT
+// @name           ConfirmExpandCollapse
+// @description    
+// @author         LukeMT
 // @include        http*://*workflowy.com/*
-// @version        1.1
+// @version        1.0
 // ==/UserScript==
 (function (String, $){
     
